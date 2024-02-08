@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    color :#0A1D56;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 99;
+}
+
+.header .logo {
+    display: flex;
+    margin-left: 20px;
+}
+
+.logo i {
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+.nav {
+    display: flex;
+    
+}
+
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    font-size: 1.1em;
+    color: #0A1D56;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.login-popup,
+.book-popup {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 8px;
+    font-weight: 600;
+}
+
+.book-popup {
+    border: 2px solid #0A1D56;
+}
+
+.container .moto {
+    max-width: 300px;
+    text-align: left;
+    position: absolute;
+    left: 120px;
+    top: 120px;
+}
+
+.moto h1 {
+    font-size: 3rem;
+    
+}
+
+.moto p {
+    font-size: .8rem;
+    margin-top: 8px;
+}
+
+.btn-center {
+    width: 150px;
+    padding: 8px 4px;
+    background-color: #0A1D56;
+    color: #fff;
+    margin-top: 16px;
+}
+
+.container .footer {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: auto;
+    width: 87%;
+    background-color: #0A1D56;
+    color: #fff;
+    font-size: .8rem;
+    padding: 30px 0;
+}
+
+.footer .card {
+    display: flex;
+    margin: 0 16px;
+}
+
+.footer .card i {
+    margin-right: 16px;
+    font-size: 1.5rem;
+    opacity: .3;
+}
+
+.hero {
+    position: absolute;
+    top: 47px;
+    right: 200px;
+    width: 300px;
+    z-index: 999;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 120px;
+    height: 600px;
+    width: 400px;
+    border-radius: 24px 24px 0 0;
+    background-color: #9BEAE0;
+    transform: skew(-10deg, 0deg);
+}
+
+
+
+.hero img {
+    width: 405px;
+    height: 547px;
+    z-index: 99;
+}
